@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+body{
+  background-color: #052e16;
+}
+
+.bg-leaf{
+background-image:  repeating-radial-gradient(circle at 0 0, transparent 0, #05570a 12px), repeating-linear-gradient(#026b2a, #0f5a20);
+background-color: #05570a;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+  scroll-snap-align: center;
+  scroll-snap-type: x mandatory;
+}
+
+*{
+	scroll-behavior: smooth;
+}
+
+@media (min-width:900px ) {
+  *::-webkit-scrollbar {
+    width: 6px;
+    height: 4px;
+  }
+
+  /* Track (background) */
+*::-webkit-scrollbar-track {
+    background: #052e16; 
+}
+
+  /* Scrollbar Thumb */
+*::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #fcd34d, #facc15, #ca8a04); 
+    border-radius: 10px;
+}
+}
+
+.bag{
+  clip-path: polygon(14% 0, 88% 0, 100% 100%, 0% 100%);
+}
+
